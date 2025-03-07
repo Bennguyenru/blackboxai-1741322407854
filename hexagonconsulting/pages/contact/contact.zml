@@ -1,0 +1,116 @@
+<view class="container">
+  <view class="header">
+    <text class="page-title">Contact Us</text>
+    <text class="page-description">Get in touch with our expert consultants</text>
+  </view>
+
+  <view class="form-section">
+    <form bindsubmit="handleSubmit">
+      <!-- Name Input -->
+      <view class="input-group">
+        <text class="input-label">Full Name</text>
+        <input 
+          type="text" 
+          name="name" 
+          class="input-field" 
+          placeholder="Enter your full name"
+          value="{{formData.name}}"
+          bindinput="handleNameInput"
+        />
+      </view>
+
+      <!-- Email Input -->
+      <view class="input-group">
+        <text class="input-label">Email Address</text>
+        <input 
+          type="text" 
+          name="email" 
+          class="input-field" 
+          placeholder="Enter your email address"
+          value="{{formData.email}}"
+          bindinput="handleEmailInput"
+        />
+      </view>
+
+      <!-- Phone Input -->
+      <view class="input-group">
+        <text class="input-label">Phone Number</text>
+        <input 
+          type="text" 
+          name="phone" 
+          class="input-field" 
+          placeholder="Enter your phone number"
+          value="{{formData.phone}}"
+          bindinput="handlePhoneInput"
+        />
+      </view>
+
+      <!-- Service Selection -->
+      <view class="input-group">
+        <text class="input-label">Service Interest</text>
+        <picker 
+          mode="selector" 
+          range="{{services}}" 
+          value="{{serviceIndex}}" 
+          bindchange="handleServiceChange"
+          class="service-picker"
+        >
+          <view class="picker-content">
+            {{services[serviceIndex]}}
+          </view>
+        </picker>
+      </view>
+
+      <!-- Message Input -->
+      <view class="input-group">
+        <text class="input-label">Message</text>
+        <textarea 
+          name="message" 
+          class="textarea-field" 
+          placeholder="Tell us about your business needs"
+          value="{{formData.message}}"
+          bindinput="handleMessageInput"
+        />
+      </view>
+
+      <!-- Submit Button -->
+      <button 
+        form-type="submit" 
+        class="submit-button" 
+        loading="{{submitting}}"
+      >
+        Send Message
+      </button>
+    </form>
+  </view>
+
+  <!-- Contact Information -->
+  <view class="contact-info">
+    <text class="section-title">Other Ways to Reach Us</text>
+    
+    <view class="info-item" bindtap="handleEmailTap">
+      <image src="../../assets/icons/email.png" class="info-icon" />
+      <view class="info-content">
+        <text class="info-label">Email</text>
+        <text class="info-text">contact@hexagonconsulting.com</text>
+      </view>
+    </view>
+
+    <view class="info-item" bindtap="handlePhoneTap">
+      <image src="../../assets/icons/phone.png" class="info-icon" />
+      <view class="info-content">
+        <text class="info-label">Phone</text>
+        <text class="info-text">+1 (555) 123-4567</text>
+      </view>
+    </view>
+
+    <view class="info-item">
+      <image src="../../assets/icons/location.png" class="info-icon" />
+      <view class="info-content">
+        <text class="info-label">Office</text>
+        <text class="info-text">123 Business Street, Suite 100</text>
+        <text class="info-text">New York, NY 10001</text>
+      </view>
+    </view>
+  </view>
+</view>
