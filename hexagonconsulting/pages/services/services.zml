@@ -1,0 +1,84 @@
+<view class="container">
+  <view class="header">
+    <text class="page-title">Our Services</text>
+    <text class="page-description">Comprehensive consulting solutions tailored to your business needs</text>
+  </view>
+
+  <!-- Strategic Planning -->
+  <view class="service-section" id="strategy">
+    <view class="service-header">
+      <image src="../../assets/icons/strategy.png" class="service-icon" />
+      <text class="service-title">Strategic Planning</text>
+    </view>
+    <text class="service-description">Develop comprehensive business strategies to achieve your organizational goals and maximize growth potential.</text>
+    <view class="features-list">
+      <view class="feature-item">
+        <image src="../../assets/icons/check.png" class="check-icon" />
+        <text class="feature-text">Market Analysis & Research</text>
+      </view>
+      <view class="feature-item">
+        <image src="../../assets/icons/check.png" class="check-icon" />
+        <text class="feature-text">Competitive Positioning</text>
+      </view>
+      <view class="feature-item">
+        <image src="../../assets/icons/check.png" class="check-icon" />
+        <text class="feature-text">Growth Strategy Development</text>
+      </view>
+    </view>
+    <button class="learn-more-button" bindtap="onLearnMore" data-service="strategy">Learn More</button>
+  </view>
+
+  <!-- Management Consulting -->
+  <view class="service-section" id="management">
+    <view class="service-header">
+      <image src="../../assets/icons/management.png" class="service-icon" />
+      <text class="service-title">Management Consulting</text>
+    </view>
+    <text class="service-description">Optimize your organizational structure and processes to improve efficiency and effectiveness.</text>
+    <view class="features-list">
+      <view class="feature-item">
+        <image src="../../assets/icons/check.png" class="check-icon" />
+        <text class="feature-text">Process Optimization</text>
+      </view>
+      <view class="feature-item">
+        <image src="../../assets/icons/check.png" class="check-icon" />
+        <text class="feature-text">Change Management</text>
+      </view>
+      <view class="feature-item">
+        <image src="../../assets/icons/check.png" class="check-icon" />
+        <text class="feature-text">Performance Improvement</text>
+      </view>
+    </view>
+    <button class="learn-more-button" bindtap="onLearnMore" data-service="management">Learn More</button>
+  </view>
+
+  <!-- Innovation Strategy -->
+  <view class="service-section" id="innovation">
+    <view class="service-header">
+      <image src="../../assets/icons/innovation.png" class="service-icon" />
+      <text class="service-title">Innovation Strategy</text>
+    </view>
+    <text class="service-description">Drive innovation and digital transformation to keep your business ahead of the competition.</text>
+    <view class="features-list">
+      <view class="feature-item">
+        <image src="../../assets/icons/check.png" class="check-icon" />
+        <text class="feature-text">Digital Transformation</text>
+      </view>
+      <view class="feature-item">
+        <image src="../../assets/icons/check.png" class="check-icon" />
+        <text class="feature-text">Technology Integration</text>
+      </view>
+      <view class="feature-item">
+        <image src="../../assets/icons/check.png" class="check-icon" />
+        <text class="feature-text">Innovation Management</text>
+      </view>
+    </view>
+    <button class="learn-more-button" bindtap="onLearnMore" data-service="innovation">Learn More</button>
+  </view>
+
+  <!-- Contact CTA -->
+  <view class="cta-section">
+    <text class="cta-text">Ready to transform your business?</text>
+    <button class="contact-button" bindtap="navigateToContact">Contact Us Now</button>
+  </view>
+</view>
