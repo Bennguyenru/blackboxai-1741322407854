@@ -1,0 +1,42 @@
+<view class="container">
+  <!-- Hero Section -->
+  <view class="hero-section">
+    <image src="../../assets/images/hero.svg" class="hero-image" />
+    <text class="hero-title">Transform Your Business with Expert Consulting</text>
+    <text class="hero-subtitle">We help businesses achieve their full potential through strategic consulting and innovative solutions.</text>
+    <button class="primary-button" bindtap="onGetStarted">Get Started</button>
+    <button class="secondary-button" bindtap="onExploreServices">Our Services</button>
+  </view>
+
+  <!-- Services Preview Section -->
+  <view class="services-section">
+    <text class="section-title">Our Services</text>
+    <text class="section-subtitle">We offer comprehensive consulting services to help your business grow and succeed in today's competitive market.</text>
+    
+    <view class="service-cards">
+      <view class="service-card" bindtap="navigateToService" data-service="strategy">
+        <image src="../../assets/icons/strategy.png" class="service-icon" />
+        <text class="service-title">Strategic Planning</text>
+        <text class="service-description">Develop comprehensive business strategies to achieve your organizational goals.</text>
+      </view>
+
+      <view class="service-card" bindtap="navigateToService" data-service="management">
+        <image src="../../assets/icons/management.png" class="service-icon" />
+        <text class="service-title">Management Consulting</text>
+        <text class="service-description">Optimize your organizational structure and processes for better efficiency.</text>
+      </view>
+
+      <view class="service-card" bindtap="navigateToService" data-service="innovation">
+        <image src="../../assets/icons/innovation.png" class="service-icon" />
+        <text class="service-title">Innovation Strategy</text>
+        <text class="service-description">Drive innovation and digital transformation to stay ahead of competition.</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- Quick Contact Section -->
+  <view class="contact-section">
+    <text class="section-title">Ready to Transform Your Business?</text>
+    <button class="contact-button" bindtap="navigateToContact">Contact Us</button>
+  </view>
+</view>
